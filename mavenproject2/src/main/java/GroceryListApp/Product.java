@@ -9,10 +9,54 @@ package GroceryListApp;
  *
  * @author Rycen
  */
-class Product {
+public class Product {
+    private int id;
+    private String name;
+    private String Description;
+    private double price;
 
-    Product(int i, String milk, String it_is_2, double d) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Product(int id, String name, String description, double price) 
+    {
+       this.id = id;
+       this.name = name;
+       this.Description = description;
+       this.price = price;
     }
     
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int Id) {
+        this.id = id;
+    }
+    
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getDesctiption() {
+        return Description;
+    }
+    
+    public void setDescription(String Description) {
+        this.Description = Description;
+    }
+    
+    public double getPrice() {
+        return price;
+    }
+    
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
 }
+
+
+
