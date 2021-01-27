@@ -55,7 +55,7 @@ public class ShoppingCart {
         if (ItemExists(prod))
         {
             ShoppingCartItem item = GetExistingItem(prod);
-            item.setQuantity(item.GetQuantity() + quantity);
+            item.SetQuantity(item.GetQuantity() + quantity);
         }
         else {
             items.add(new ShoppingCartItem(prod, quantity));
@@ -68,7 +68,7 @@ public class ShoppingCart {
         {
             ShoppingCartItem item = GetExistingItem(prod);
             if(item.GetQuantity() > quantity)
-                item.setQuantity(item.GetQuantity()- quantity);
+                item.SetQuantity(item.GetQuantity()- quantity);
             else
                 items.remove(item);
         }

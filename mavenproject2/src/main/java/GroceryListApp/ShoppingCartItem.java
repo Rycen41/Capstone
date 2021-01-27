@@ -38,5 +38,13 @@ public class ShoppingCartItem {
     
     public void GetQuantity(int quantity) {
         this.quantity = quantity;
-    }   
+    }
+    
+    public int SetQuantity() {
+        return quantity;
+    }
+    
+    public void SetQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }
